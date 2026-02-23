@@ -1,0 +1,72 @@
+📝 Pushing Code From Eclipse to GitHub — Step‑by‑Step Notes
+✔ Step 1: Create a GitHub Repository
+
+Log in to GitHub
+Click New Repository
+Enter repo name → Example: saucedemo-automation
+Leave it empty (no README, no .gitignore)
+Click Create Repository
+
+
+✔ Step 2: Open Your Project in Eclipse
+Make sure your project is already created and imported in Eclipse.
+
+✔ Step 3: Enable Git (if not enabled)
+
+Right‑click your project
+Select:
+Team → Share Project
+Select Git
+Click Next → Finish
+
+This initializes Git inside your Eclipse project.
+
+✔ Step 4: Commit Your Code
+
+Right‑click the project
+Select Team → Commit
+Add a commit message like:
+"Initial commit"
+Select all files
+Click Commit (or Commit and Push if available)
+
+
+✔ Step 5: Add GitHub as Remote
+If you chose Commit only, now do:
+
+Right‑click your project
+Select Team → Remote → Push
+In URI, paste your GitHub repo link:
+https://github.com/<username>/<repo-name>.git
+
+
+Enter GitHub username + PAT token (not password)
+Click Next
+
+
+✔ Step 6: Select Branch for Push
+
+Under "Source ref" → select master or main
+Under "Destination ref" → select refs/heads/main
+Click Add Spec
+Click Next
+Click Finish
+
+
+✔ Step 7: Verify on GitHub
+Go to your GitHub repo → refresh the page → you should see all your code uploaded.
+
+🟦 PUSH SHORTCUT (If available)
+If your Eclipse already shows Commit and Push, you can do:
+Right‑click → Team → Commit and Push
+
+And skip remote setup.
+
+🟥 If push fails:
+Usually it is because:
+
+Wrong username/password
+GitHub now requires PAT (Personal Access Token)
+Wrong branch name (main vs master)
+Repository already has content
+ZIP or binary blocked by .gitignore

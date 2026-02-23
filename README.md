@@ -1,1 +1,1 @@
-Practice JAVA !
+NOTES !
